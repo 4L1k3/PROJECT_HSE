@@ -42,7 +42,7 @@ int EPS() {
 }
 
 std::pair<int, int> get_next_road(std::pair<int, int> road_id) {
-	return nexts[road_id][0];//[std::rand() % nexts[road_id].size()];
+	return nexts[road_id][0]; // МОЖНО РАНДОМИЗИРОВАТЬ ТАК [std::rand() % nexts[road_id].size()];
 }
 
 int get_first_free(std::pair<int, int> rd_id) {
@@ -127,9 +127,6 @@ void update_car(int id, int v, int n, int b, int time) {
 			new_cars[id].LS = "R";
 		}
 	}
-	if (v < 0) {
-		std::cout << "LELLELELE " << id << "\n\n\n\n\n\n";
-	}
 }
 
 void update_road(CAR c) {
@@ -184,10 +181,6 @@ void update(CAR c, int time) {
 	}
 	// ДВИЖЕНИЕ И ПОВОРОТЫ
 	int new_n = old_n + new_v;
-	//if (time == 29 && c.id == 7) {
-	//	std::cout << "NEW_n = " << new_n << "\n";
-	//	std::cout << "old_n = " << old_n << "\n";
-	//}
 	if (new_n >= c.road_len) {
 		int u = new_n + 1 - c.road_len;
 		int nfb = get_first_free(get_next_road(c.road_id));
@@ -280,8 +273,6 @@ int main() {
 	add_to_road({1, 2}, 200, 1);
 	add_to_road({2, 1}, 200, 1);
 	
-	//cars.push_back(CAR({0, 1}, 100, 99, std::rand() % (V_LMAX + 1), cars.size()));	
-	std::cout << get_next_car(cars[0]).second << "\n";
 	update_g(0);
 	for (size_t i = 0; i < roads_ids.size(); ++i) {
 		
