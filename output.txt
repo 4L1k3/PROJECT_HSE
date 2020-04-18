@@ -1,0 +1,130 @@
+ROAD FROM 0 TO 1
+START SIGNAL = G
+CAR_ID = 0
+ position on the road = 67
+ distance to the next car = 123
+ speed = 5
+ LS = G
+CAR_ID = 1
+ position on the road = 0
+ distance to the next car = 23
+ speed = 4
+ LS = G
+CAR_ID = 2
+ position on the road = 24
+ distance to the next car = 42
+ speed = 5
+ LS = G
+
+ROAD FROM 1 TO 0
+START SIGNAL = G
+CAR_ID = 3
+ position on the road = 58
+ distance to the next car = 68
+ speed = 0
+ LS = G
+
+ROAD FROM 0 TO 2
+START SIGNAL = R
+CAR_ID = 6
+ position on the road = 27
+ distance to the next car = 164
+ speed = 1
+ LS = R
+
+ROAD FROM 2 TO 0
+START SIGNAL = R
+CAR_ID = 4
+ position on the road = 64
+ distance to the next car = 85
+ speed = 4
+ LS = R
+CAR_ID = 5
+ position on the road = 45
+ distance to the next car = 18
+ speed = 5
+ LS = R
+
+ROAD FROM 1 TO 2
+START SIGNAL = G
+CAR_ID = 7
+ position on the road = 91
+ distance to the next car = 153
+ speed = 1
+ LS = G
+
+ROAD FROM 2 TO 1
+START SIGNAL = G
+CAR_ID = 8
+ position on the road = 42
+ distance to the next car = 215
+ speed = 1
+ LS = G
+
+#############
+AFTER 150000 SEC
+
+
+ROAD FROM 0 TO 1
+START SIGNAL = G
+CAR_ID = 5
+ position on the road = 71
+ distance to the next car = 49
+ speed = 1
+ LS = G
+
+ROAD FROM 1 TO 0
+START SIGNAL = G
+CAR_ID = 3
+ position on the road = 58
+ distance to the next car = 447
+ speed = 0
+ LS = G
+CAR_ID = 6
+ position on the road = 56
+ distance to the next car = 0
+ speed = 0
+ LS = G
+CAR_ID = 8
+ position on the road = 57
+ distance to the next car = 0
+ speed = 0
+ LS = G
+
+ROAD FROM 0 TO 2
+START SIGNAL = R
+
+ROAD FROM 2 TO 0
+START SIGNAL = R
+CAR_ID = 7
+ position on the road = 41
+ distance to the next car = 179
+ speed = 1
+ LS = R
+
+ROAD FROM 1 TO 2
+START SIGNAL = G
+CAR_ID = 0
+ position on the road = 197
+ distance to the next car = 43
+ speed = 1
+ LS = G
+CAR_ID = 1
+ position on the road = 57
+ distance to the next car = 44
+ speed = 1
+ LS = G
+CAR_ID = 2
+ position on the road = 102
+ distance to the next car = 94
+ speed = 1
+ LS = G
+CAR_ID = 4
+ position on the road = 21
+ distance to the next car = 35
+ speed = 1
+ LS = G
+
+ROAD FROM 2 TO 1
+START SIGNAL = G
+
